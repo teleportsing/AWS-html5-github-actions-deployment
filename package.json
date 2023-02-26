@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test": "eslint *.js lib/*.js && istanbul cover _mocha -- -R spec",
+    "start": "lite-server",
+    "dev": "browser-sync --port 3999 start --server --files \"*.html, css/*.css, public/*.html, js/*.js\""
+  },
+  "dependencies": {
+    "connect-history-api-fallback": "^1.6.0",
+    "connect-logger": "^0.0.1",
+    "lodash": "^4.17.20",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.12",
+    "lite-server": "^2.6.1"
+  }
+}
